@@ -1,0 +1,437 @@
+2025-04-17T21:26:55.708-06:00  INFO 28032 --- [msvc-products] [restartedMain] hn.springcloud.MsvcProductsApplication   : The following 1 profile is active: "default"
+2025-04-17T21:26:56.433-06:00  INFO 28032 --- [msvc-products] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4b4676b1-fb3b-3b25-8196-20b392796f58
+2025-04-17T21:26:56.788-06:00  INFO 28032 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-04-17T21:26:56.803-06:00  INFO 28032 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T21:26:56.808-06:00  INFO 28032 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-17T21:26:56.858-06:00  INFO 28032 --- [msvc-products] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T21:26:56.858-06:00  INFO 28032 --- [msvc-products] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1133 ms
+2025-04-17T21:26:56.913-06:00  WARN 28032 --- [msvc-products] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController' defined in file [C:\Repositorios\spring-cloud\msvc-products\target\classes\hn\springcloud\controllers\ProductController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'productServiceImpl' defined in file [C:\Repositorios\spring-cloud\msvc-products\target\classes\hn\springcloud\services\ProductServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'hn.springcloud.repositories.ProductRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-04-17T21:26:56.916-06:00  INFO 28032 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-17T21:26:56.936-06:00  INFO 28032 --- [msvc-products] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-17T21:26:56.969-06:00 ERROR 28032 --- [msvc-products] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in hn.springcloud.services.ProductServiceImpl required a bean of type 'hn.springcloud.repositories.ProductRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'hn.springcloud.repositories.ProductRepository' in your configuration.
+
+2025-04-17T21:30:15.561-06:00  INFO 27040 --- [msvc-products] [restartedMain] hn.springcloud.MsvcProductsApplication   : The following 1 profile is active: "default"
+2025-04-17T21:30:15.977-06:00  INFO 27040 --- [msvc-products] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-17T21:30:16.087-06:00  INFO 27040 --- [msvc-products] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 2 JPA repository interfaces.
+2025-04-17T21:30:16.426-06:00  INFO 27040 --- [msvc-products] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=31aa5f9d-3357-3560-98c2-c7f58a63d649
+2025-04-17T21:30:16.824-06:00  INFO 27040 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-04-17T21:30:16.844-06:00  INFO 27040 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T21:30:16.844-06:00  INFO 27040 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-17T21:30:16.894-06:00  INFO 27040 --- [msvc-products] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T21:30:16.895-06:00  INFO 27040 --- [msvc-products] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1308 ms
+2025-04-17T21:30:16.961-06:00  WARN 27040 --- [msvc-products] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController' defined in file [C:\Repositorios\spring-cloud\msvc-products\target\classes\hn\springcloud\controllers\ProductController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'productServiceImpl' defined in file [C:\Repositorios\spring-cloud\msvc-products\target\classes\hn\springcloud\services\ProductServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'productRepository' defined in hn.springcloud.repositories.ProductRepository defined in @EnableJpaRepositories declared on MsvcProductsApplication: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2025-04-17T21:30:16.963-06:00  INFO 27040 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-17T21:30:16.979-06:00  INFO 27040 --- [msvc-products] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-17T21:30:17.004-06:00 ERROR 27040 --- [msvc-products] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in hn.springcloud.services.ProductServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2025-04-17T21:32:48.030-06:00  INFO 16900 --- [msvc-products] [restartedMain] hn.springcloud.MsvcProductsApplication   : The following 1 profile is active: "default"
+2025-04-17T21:32:48.752-06:00  INFO 16900 --- [msvc-products] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4b4676b1-fb3b-3b25-8196-20b392796f58
+2025-04-17T21:32:49.170-06:00  INFO 16900 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-04-17T21:32:49.184-06:00  INFO 16900 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T21:32:49.184-06:00  INFO 16900 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-17T21:32:49.237-06:00  INFO 16900 --- [msvc-products] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T21:32:49.238-06:00  INFO 16900 --- [msvc-products] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1194 ms
+2025-04-17T21:32:49.293-06:00  WARN 16900 --- [msvc-products] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController' defined in file [C:\Repositorios\spring-cloud\msvc-products\target\classes\hn\springcloud\controllers\ProductController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'productServiceImpl' defined in file [C:\Repositorios\spring-cloud\msvc-products\target\classes\hn\springcloud\services\ProductServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'hn.springcloud.repositories.ProductRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-04-17T21:32:49.296-06:00  INFO 16900 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-17T21:32:49.313-06:00  INFO 16900 --- [msvc-products] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-17T21:32:49.340-06:00 ERROR 16900 --- [msvc-products] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in hn.springcloud.services.ProductServiceImpl required a bean of type 'hn.springcloud.repositories.ProductRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'hn.springcloud.repositories.ProductRepository' in your configuration.
+
+2025-04-17T21:55:29.922-06:00  INFO 26552 --- [msvc-products] [restartedMain] h.s.m.products.MsvcProductsApplication   : The following 1 profile is active: "default"
+2025-04-17T21:55:30.501-06:00  INFO 26552 --- [msvc-products] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-17T21:55:30.632-06:00  INFO 26552 --- [msvc-products] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 2 JPA repository interfaces.
+2025-04-17T21:55:30.870-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a557f794-4c83-381e-b042-aeb8187822b9
+2025-04-17T21:55:31.414-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-04-17T21:55:31.445-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T21:55:31.446-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-17T21:55:31.513-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T21:55:31.513-06:00  INFO 26552 --- [msvc-products] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1572 ms
+2025-04-17T21:55:31.798-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-17T21:55:31.909-06:00  INFO 26552 --- [msvc-products] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-17T21:55:31.956-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-17T21:55:32.328-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-17T21:55:32.415-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-17T21:55:32.640-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63c8b401
+2025-04-17T21:55:32.642-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-17T21:55:32.710-06:00  INFO 26552 --- [msvc-products] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-17T21:55:33.794-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-17T21:55:33.896-06:00  WARN 26552 --- [msvc-products] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-04-17T21:55:33.896-06:00  WARN 26552 --- [msvc-products] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "ukj562wwmipqt96rkoqbo0jc34" of relation "tbl_users" does not exist, skipping
+2025-04-17T21:55:33.899-06:00  WARN 26552 --- [msvc-products] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-04-17T21:55:33.899-06:00  WARN 26552 --- [msvc-products] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "ukc190nfu2w5xwvexf9dv08grsq" of relation "tbl_users" does not exist, skipping
+2025-04-17T21:55:33.909-06:00  INFO 26552 --- [msvc-products] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T21:55:34.188-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-17T21:55:34.260-06:00  WARN 26552 --- [msvc-products] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-17T21:55:34.966-06:00  WARN 26552 --- [msvc-products] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-04-17T21:55:35.239-06:00  INFO 26552 --- [msvc-products] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-04-17T21:55:35.283-06:00  WARN 26552 --- [msvc-products] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-17T21:55:35.381-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55377 (http) with context path '/'
+2025-04-17T21:55:35.384-06:00  INFO 26552 --- [msvc-products] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55377
+2025-04-17T21:55:35.395-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-04-17T21:55:35.442-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-04-17T21:55:35.450-06:00  INFO 26552 --- [msvc-products] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-17T21:55:35.465-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-17T21:55:35.466-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-17T21:55:35.466-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-17T21:55:35.466-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-17T21:55:35.466-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-17T21:55:35.466-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-04-17T21:55:35.467-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-17T21:55:35.839-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-17T21:55:35.840-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-04-17T21:55:35.842-06:00  INFO 26552 --- [msvc-products] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-17T21:55:35.843-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1744948535842 with initial instances count: 0
+2025-04-17T21:55:35.846-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSVC-PRODUCTS with eureka with status UP
+2025-04-17T21:55:35.847-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744948535847, current=UP, previous=STARTING]
+2025-04-17T21:55:35.848-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:9860331d8f2491bed025cc8f8156bb81: registering service...
+2025-04-17T21:55:35.953-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:9860331d8f2491bed025cc8f8156bb81 - registration status: 204
+2025-04-17T21:55:35.960-06:00  INFO 26552 --- [msvc-products] [restartedMain] h.s.m.products.MsvcProductsApplication   : Started MsvcProductsApplication in 7.872 seconds (process running for 8.714)
+2025-04-17T21:56:05.854-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-17T21:56:05.856-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-17T21:56:05.856-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-17T21:56:05.857-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-17T21:56:05.857-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-17T21:56:05.857-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-04-17T21:56:05.858-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-17T21:56:05.886-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-17T22:00:35.482-06:00  INFO 26552 --- [msvc-products] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-17T22:02:59.658-06:00  INFO 26552 --- [msvc-products] [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-17T22:02:59.659-06:00  INFO 26552 --- [msvc-products] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-17T22:02:59.663-06:00  INFO 26552 --- [msvc-products] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-04-17T22:02:59.748-06:00  WARN 26552 --- [msvc-products] [http-nio-auto-1-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+2025-04-17T22:04:58.709-06:00  INFO 26552 --- [msvc-products] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-17T22:04:58.712-06:00  INFO 26552 --- [msvc-products] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSVC-PRODUCTS with eureka with status DOWN
+2025-04-17T22:04:58.714-06:00  INFO 26552 --- [msvc-products] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744949098714, current=DOWN, previous=UP]
+2025-04-17T22:04:58.714-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:9860331d8f2491bed025cc8f8156bb81: registering service...
+2025-04-17T22:04:58.717-06:00  INFO 26552 --- [msvc-products] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-17T22:04:58.724-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:9860331d8f2491bed025cc8f8156bb81 - registration status: 204
+2025-04-17T22:04:58.931-06:00  INFO 26552 --- [msvc-products] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-17T22:04:58.938-06:00  INFO 26552 --- [msvc-products] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T22:04:58.942-06:00  INFO 26552 --- [msvc-products] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-17T22:04:58.947-06:00  INFO 26552 --- [msvc-products] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-17T22:04:58.959-06:00  INFO 26552 --- [msvc-products] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-04-17T22:05:01.965-06:00  INFO 26552 --- [msvc-products] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-04-17T22:05:01.986-06:00  INFO 26552 --- [msvc-products] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:9860331d8f2491bed025cc8f8156bb81 - deregister  status: 200
+2025-04-17T22:05:01.987-06:00  INFO 26552 --- [msvc-products] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-04-17T22:05:01.989-06:00  INFO 26552 --- [msvc-products] [Thread-1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-17T22:05:01.990-06:00  INFO 26552 --- [msvc-products] [Thread-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-04-17T22:05:02.580-06:00  INFO 26552 --- [msvc-products] [restartedMain] h.s.m.products.MsvcProductsApplication   : The following 1 profile is active: "default"
+2025-04-17T22:05:02.956-06:00  INFO 26552 --- [msvc-products] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-17T22:05:02.979-06:00  INFO 26552 --- [msvc-products] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2025-04-17T22:05:03.098-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a557f794-4c83-381e-b042-aeb8187822b9
+2025-04-17T22:05:03.176-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-04-17T22:05:03.177-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T22:05:03.178-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-17T22:05:03.243-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T22:05:03.243-06:00  INFO 26552 --- [msvc-products] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 659 ms
+2025-04-17T22:05:03.289-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-17T22:05:03.293-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-17T22:05:03.307-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-17T22:05:03.309-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-04-17T22:05:03.372-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@677141f0
+2025-04-17T22:05:03.373-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-04-17T22:05:03.381-06:00  INFO 26552 --- [msvc-products] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-17T22:05:03.580-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-17T22:05:03.860-06:00  INFO 26552 --- [msvc-products] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T22:05:03.950-06:00  WARN 26552 --- [msvc-products] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-17T22:05:04.110-06:00  WARN 26552 --- [msvc-products] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-04-17T22:05:04.343-06:00  INFO 26552 --- [msvc-products] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-04-17T22:05:04.356-06:00  WARN 26552 --- [msvc-products] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-17T22:05:04.389-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55695 (http) with context path '/'
+2025-04-17T22:05:04.391-06:00  INFO 26552 --- [msvc-products] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55695
+2025-04-17T22:05:04.392-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-04-17T22:05:04.394-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-04-17T22:05:04.394-06:00  INFO 26552 --- [msvc-products] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-17T22:05:04.396-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-17T22:05:04.396-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-17T22:05:04.396-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-17T22:05:04.397-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-17T22:05:04.397-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-17T22:05:04.397-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-04-17T22:05:04.397-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-17T22:05:04.432-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-17T22:05:04.432-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-04-17T22:05:04.433-06:00  INFO 26552 --- [msvc-products] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-17T22:05:04.433-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1744949104433 with initial instances count: 2
+2025-04-17T22:05:04.434-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSVC-PRODUCTS with eureka with status UP
+2025-04-17T22:05:04.435-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744949104435, current=UP, previous=STARTING]
+2025-04-17T22:05:04.435-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:f5b0a4e77412585f8a19b9d58d2f432d: registering service...
+2025-04-17T22:05:04.446-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:f5b0a4e77412585f8a19b9d58d2f432d - registration status: 204
+2025-04-17T22:05:04.518-06:00  INFO 26552 --- [msvc-products] [restartedMain] h.s.m.products.MsvcProductsApplication   : Started MsvcProductsApplication in 2.418 seconds (process running for 577.272)
+2025-04-17T22:05:04.520-06:00  INFO 26552 --- [msvc-products] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-17T22:06:47.404-06:00  INFO 26552 --- [msvc-products] [http-nio-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-17T22:06:47.405-06:00  INFO 26552 --- [msvc-products] [http-nio-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-17T22:06:47.409-06:00  INFO 26552 --- [msvc-products] [http-nio-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-04-17T22:06:47.419-06:00  WARN 26552 --- [msvc-products] [http-nio-auto-2-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+2025-04-17T22:07:24.280-06:00  WARN 26552 --- [msvc-products] [http-nio-auto-2-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<hn.springcloud.msvc.libs.commons.utils.CustomResponse> hn.springcloud.msvc.products.controllers.ProductController.createProduct(hn.springcloud.msvc.products.dto.CreateProductDTO) with 3 errors: [Field error in object 'createProductDTO' on field 'createdBy': rejected value [null]; codes [NotBlank.createProductDTO.createdBy,NotBlank.createdBy,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createProductDTO.createdBy,createdBy]; arguments []; default message [createdBy]]; default message [El parametro createdBy no puede estar vacío]] [Field error in object 'createProductDTO' on field 'name': rejected value [null]; codes [NotBlank.createProductDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createProductDTO.name,name]; arguments []; default message [name]]; default message [El nombre del producto no puede estar vacío]] [Field error in object 'createProductDTO' on field 'idCategory': rejected value [null]; codes [NotNull.createProductDTO.idCategory,NotNull.idCategory,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createProductDTO.idCategory,idCategory]; arguments []; default message [idCategory]]; default message [La categoria no puede estar vacía]] ]
+2025-04-17T22:07:38.987-06:00  WARN 26552 --- [msvc-products] [http-nio-auto-2-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<hn.springcloud.msvc.libs.commons.utils.CustomResponse> hn.springcloud.msvc.products.controllers.ProductController.createProduct(hn.springcloud.msvc.products.dto.CreateProductDTO) with 2 errors: [Field error in object 'createProductDTO' on field 'idCategory': rejected value [null]; codes [NotNull.createProductDTO.idCategory,NotNull.idCategory,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createProductDTO.idCategory,idCategory]; arguments []; default message [idCategory]]; default message [La categoria no puede estar vacía]] [Field error in object 'createProductDTO' on field 'name': rejected value [null]; codes [NotBlank.createProductDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createProductDTO.name,name]; arguments []; default message [name]]; default message [El nombre del producto no puede estar vacío]] ]
+2025-04-17T22:08:02.558-06:00  WARN 26552 --- [msvc-products] [http-nio-auto-2-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<hn.springcloud.msvc.libs.commons.utils.CustomResponse> hn.springcloud.msvc.products.controllers.ProductController.createProduct(hn.springcloud.msvc.products.dto.CreateProductDTO): [Field error in object 'createProductDTO' on field 'name': rejected value [null]; codes [NotBlank.createProductDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createProductDTO.name,name]; arguments []; default message [name]]; default message [El nombre del producto no puede estar vacío]] ]
+2025-04-17T22:08:41.892-06:00  INFO 26552 --- [msvc-products] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-04-17T22:08:41.893-06:00  INFO 26552 --- [msvc-products] [Thread-8] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSVC-PRODUCTS with eureka with status DOWN
+2025-04-17T22:08:41.893-06:00  INFO 26552 --- [msvc-products] [Thread-8] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744949321893, current=DOWN, previous=UP]
+2025-04-17T22:08:41.894-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:f5b0a4e77412585f8a19b9d58d2f432d: registering service...
+2025-04-17T22:08:41.894-06:00  INFO 26552 --- [msvc-products] [Thread-8] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-17T22:08:41.909-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:f5b0a4e77412585f8a19b9d58d2f432d - registration status: 204
+2025-04-17T22:08:42.166-06:00  INFO 26552 --- [msvc-products] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-17T22:08:42.172-06:00  INFO 26552 --- [msvc-products] [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T22:08:42.173-06:00  INFO 26552 --- [msvc-products] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-04-17T22:08:42.176-06:00  INFO 26552 --- [msvc-products] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-04-17T22:08:42.177-06:00  INFO 26552 --- [msvc-products] [Thread-8] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-04-17T22:08:45.182-06:00  INFO 26552 --- [msvc-products] [Thread-8] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-04-17T22:08:45.204-06:00  INFO 26552 --- [msvc-products] [Thread-8] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:f5b0a4e77412585f8a19b9d58d2f432d - deregister  status: 200
+2025-04-17T22:08:45.206-06:00  INFO 26552 --- [msvc-products] [Thread-8] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-04-17T22:08:45.207-06:00  INFO 26552 --- [msvc-products] [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-17T22:08:45.208-06:00  INFO 26552 --- [msvc-products] [Thread-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-04-17T22:08:45.868-06:00  INFO 26552 --- [msvc-products] [restartedMain] h.s.m.products.MsvcProductsApplication   : The following 1 profile is active: "default"
+2025-04-17T22:08:46.099-06:00  INFO 26552 --- [msvc-products] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-17T22:08:46.113-06:00  INFO 26552 --- [msvc-products] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2025-04-17T22:08:46.188-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a557f794-4c83-381e-b042-aeb8187822b9
+2025-04-17T22:08:46.242-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-04-17T22:08:46.243-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T22:08:46.243-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-17T22:08:46.308-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T22:08:46.309-06:00  INFO 26552 --- [msvc-products] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 437 ms
+2025-04-17T22:08:46.339-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-17T22:08:46.343-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-17T22:08:46.355-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-17T22:08:46.356-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-04-17T22:08:46.418-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@7fe06ca0
+2025-04-17T22:08:46.418-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-04-17T22:08:46.427-06:00  INFO 26552 --- [msvc-products] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-17T22:08:46.550-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-17T22:08:46.776-06:00  INFO 26552 --- [msvc-products] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T22:08:46.865-06:00  WARN 26552 --- [msvc-products] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-17T22:08:46.973-06:00  WARN 26552 --- [msvc-products] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-04-17T22:08:47.216-06:00  INFO 26552 --- [msvc-products] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-04-17T22:08:47.237-06:00  WARN 26552 --- [msvc-products] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-17T22:08:47.263-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55747 (http) with context path '/'
+2025-04-17T22:08:47.264-06:00  INFO 26552 --- [msvc-products] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55747
+2025-04-17T22:08:47.266-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-04-17T22:08:47.269-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-04-17T22:08:47.271-06:00  INFO 26552 --- [msvc-products] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-17T22:08:47.272-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-17T22:08:47.272-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-17T22:08:47.272-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-17T22:08:47.272-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-17T22:08:47.273-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-17T22:08:47.273-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-04-17T22:08:47.273-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-17T22:08:47.315-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-17T22:08:47.316-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-04-17T22:08:47.318-06:00  INFO 26552 --- [msvc-products] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-17T22:08:47.318-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1744949327318 with initial instances count: 2
+2025-04-17T22:08:47.319-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSVC-PRODUCTS with eureka with status UP
+2025-04-17T22:08:47.319-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744949327319, current=UP, previous=STARTING]
+2025-04-17T22:08:47.320-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:9519d3e41be6aa8029407382d5aeb272: registering service...
+2025-04-17T22:08:47.334-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:9519d3e41be6aa8029407382d5aeb272 - registration status: 204
+2025-04-17T22:08:47.427-06:00  INFO 26552 --- [msvc-products] [restartedMain] h.s.m.products.MsvcProductsApplication   : Started MsvcProductsApplication in 2.104 seconds (process running for 800.181)
+2025-04-17T22:08:47.429-06:00  INFO 26552 --- [msvc-products] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-17T22:09:50.643-06:00  INFO 26552 --- [msvc-products] [http-nio-auto-3-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-17T22:09:50.644-06:00  INFO 26552 --- [msvc-products] [http-nio-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-17T22:09:50.646-06:00  INFO 26552 --- [msvc-products] [http-nio-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-17T22:09:50.675-06:00  WARN 26552 --- [msvc-products] [http-nio-auto-3-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.lang.Double'. Check configuration for 'price']
+2025-04-17T22:10:13.661-06:00  INFO 26552 --- [msvc-products] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-04-17T22:10:13.663-06:00  INFO 26552 --- [msvc-products] [Thread-15] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSVC-PRODUCTS with eureka with status DOWN
+2025-04-17T22:10:13.663-06:00  INFO 26552 --- [msvc-products] [Thread-15] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744949413663, current=DOWN, previous=UP]
+2025-04-17T22:10:13.664-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:9519d3e41be6aa8029407382d5aeb272: registering service...
+2025-04-17T22:10:13.664-06:00  INFO 26552 --- [msvc-products] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-17T22:10:13.680-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:9519d3e41be6aa8029407382d5aeb272 - registration status: 204
+2025-04-17T22:10:13.897-06:00  INFO 26552 --- [msvc-products] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-17T22:10:13.899-06:00  INFO 26552 --- [msvc-products] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T22:10:13.900-06:00  INFO 26552 --- [msvc-products] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-04-17T22:10:13.904-06:00  INFO 26552 --- [msvc-products] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-04-17T22:10:13.905-06:00  INFO 26552 --- [msvc-products] [Thread-15] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-04-17T22:10:16.910-06:00  INFO 26552 --- [msvc-products] [Thread-15] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-04-17T22:10:16.930-06:00  INFO 26552 --- [msvc-products] [Thread-15] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:9519d3e41be6aa8029407382d5aeb272 - deregister  status: 200
+2025-04-17T22:10:16.930-06:00  INFO 26552 --- [msvc-products] [Thread-15] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-04-17T22:10:16.932-06:00  INFO 26552 --- [msvc-products] [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-17T22:10:16.933-06:00  INFO 26552 --- [msvc-products] [Thread-15] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-04-17T22:10:17.503-06:00  INFO 26552 --- [msvc-products] [restartedMain] h.s.m.products.MsvcProductsApplication   : The following 1 profile is active: "default"
+2025-04-17T22:10:17.746-06:00  INFO 26552 --- [msvc-products] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-17T22:10:17.766-06:00  INFO 26552 --- [msvc-products] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2025-04-17T22:10:17.860-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a557f794-4c83-381e-b042-aeb8187822b9
+2025-04-17T22:10:17.929-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-04-17T22:10:17.931-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T22:10:17.932-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-17T22:10:17.979-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T22:10:17.979-06:00  INFO 26552 --- [msvc-products] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 472 ms
+2025-04-17T22:10:18.011-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-17T22:10:18.015-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-17T22:10:18.028-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-17T22:10:18.031-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-04-17T22:10:18.091-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@34c560d2
+2025-04-17T22:10:18.092-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-04-17T22:10:18.101-06:00  INFO 26552 --- [msvc-products] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-17T22:10:18.219-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-17T22:10:18.431-06:00  INFO 26552 --- [msvc-products] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T22:10:18.531-06:00  WARN 26552 --- [msvc-products] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-17T22:10:18.666-06:00  WARN 26552 --- [msvc-products] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-04-17T22:10:18.918-06:00  INFO 26552 --- [msvc-products] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-04-17T22:10:18.928-06:00  WARN 26552 --- [msvc-products] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-17T22:10:18.992-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55775 (http) with context path '/'
+2025-04-17T22:10:18.994-06:00  INFO 26552 --- [msvc-products] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55775
+2025-04-17T22:10:18.994-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-04-17T22:10:18.994-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-04-17T22:10:18.994-06:00  INFO 26552 --- [msvc-products] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-17T22:10:18.994-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-17T22:10:18.994-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-17T22:10:18.994-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-17T22:10:18.994-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-17T22:10:18.994-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-17T22:10:18.994-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-04-17T22:10:18.994-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-17T22:10:19.032-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-17T22:10:19.033-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-04-17T22:10:19.033-06:00  INFO 26552 --- [msvc-products] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-17T22:10:19.035-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1744949419033 with initial instances count: 2
+2025-04-17T22:10:19.035-06:00  INFO 26552 --- [msvc-products] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSVC-PRODUCTS with eureka with status UP
+2025-04-17T22:10:19.036-06:00  INFO 26552 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744949419036, current=UP, previous=STARTING]
+2025-04-17T22:10:19.036-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:6c0f306519489114f8d4be26a8334a04: registering service...
+2025-04-17T22:10:19.049-06:00  INFO 26552 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:6c0f306519489114f8d4be26a8334a04 - registration status: 204
+2025-04-17T22:10:19.155-06:00  INFO 26552 --- [msvc-products] [restartedMain] h.s.m.products.MsvcProductsApplication   : Started MsvcProductsApplication in 2.106 seconds (process running for 891.912)
+2025-04-17T22:10:19.155-06:00  INFO 26552 --- [msvc-products] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-17T22:11:34.062-06:00  INFO 26552 --- [msvc-products] [http-nio-auto-4-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-17T22:11:34.062-06:00  INFO 26552 --- [msvc-products] [http-nio-auto-4-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-17T22:11:34.064-06:00  INFO 26552 --- [msvc-products] [http-nio-auto-4-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-17T22:11:34.094-06:00  WARN 26552 --- [msvc-products] [http-nio-auto-4-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<hn.springcloud.msvc.libs.commons.utils.CustomResponse> hn.springcloud.msvc.products.controllers.ProductController.createProduct(hn.springcloud.msvc.products.dto.CreateProductDTO): [Field error in object 'createProductDTO' on field 'price': rejected value [null]; codes [NotNull.createProductDTO.price,NotNull.price,NotNull.java.lang.Double,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createProductDTO.price,price]; arguments []; default message [price]]; default message [El precio del producto no puede estar vacío]] ]
+2025-04-17T22:26:35.058-06:00  INFO 28272 --- [msvc-products] [restartedMain] h.s.m.products.MsvcProductsApplication   : The following 1 profile is active: "default"
+2025-04-17T22:26:35.650-06:00  INFO 28272 --- [msvc-products] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-17T22:26:35.788-06:00  INFO 28272 --- [msvc-products] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 2 JPA repository interfaces.
+2025-04-17T22:26:36.020-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a557f794-4c83-381e-b042-aeb8187822b9
+2025-04-17T22:26:36.484-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-04-17T22:26:36.499-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T22:26:36.499-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-17T22:26:36.559-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T22:26:36.560-06:00  INFO 28272 --- [msvc-products] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1476 ms
+2025-04-17T22:26:36.789-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-17T22:26:36.869-06:00  INFO 28272 --- [msvc-products] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-17T22:26:36.928-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-17T22:26:37.396-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-17T22:26:37.463-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-17T22:26:37.647-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@10940f21
+2025-04-17T22:26:37.649-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-17T22:26:37.713-06:00  INFO 28272 --- [msvc-products] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-17T22:26:38.734-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-17T22:26:38.815-06:00  WARN 28272 --- [msvc-products] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-04-17T22:26:38.815-06:00  WARN 28272 --- [msvc-products] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "ukj562wwmipqt96rkoqbo0jc34" of relation "tbl_users" does not exist, skipping
+2025-04-17T22:26:38.820-06:00  WARN 28272 --- [msvc-products] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-04-17T22:26:38.820-06:00  WARN 28272 --- [msvc-products] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "ukc190nfu2w5xwvexf9dv08grsq" of relation "tbl_users" does not exist, skipping
+2025-04-17T22:26:38.829-06:00  INFO 28272 --- [msvc-products] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T22:26:39.115-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-17T22:26:39.186-06:00  WARN 28272 --- [msvc-products] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-17T22:26:39.872-06:00  WARN 28272 --- [msvc-products] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-04-17T22:26:40.165-06:00  INFO 28272 --- [msvc-products] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-04-17T22:26:40.222-06:00  WARN 28272 --- [msvc-products] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-17T22:26:40.351-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 55964 (http) with context path '/'
+2025-04-17T22:26:40.353-06:00  INFO 28272 --- [msvc-products] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55964
+2025-04-17T22:26:40.367-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-04-17T22:26:40.429-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-04-17T22:26:40.438-06:00  INFO 28272 --- [msvc-products] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-17T22:26:40.463-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-17T22:26:40.463-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-17T22:26:40.463-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-17T22:26:40.464-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-17T22:26:40.464-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-17T22:26:40.464-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-04-17T22:26:40.464-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-17T22:26:40.877-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-17T22:26:40.878-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-04-17T22:26:40.879-06:00  INFO 28272 --- [msvc-products] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-17T22:26:40.881-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1744950400880 with initial instances count: 0
+2025-04-17T22:26:40.885-06:00  INFO 28272 --- [msvc-products] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSVC-PRODUCTS with eureka with status UP
+2025-04-17T22:26:40.886-06:00  INFO 28272 --- [msvc-products] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744950400886, current=UP, previous=STARTING]
+2025-04-17T22:26:40.887-06:00  INFO 28272 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:5e2fcb82329b192e2c29ea4b8bec40c6: registering service...
+2025-04-17T22:26:41.018-06:00  INFO 28272 --- [msvc-products] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSVC-PRODUCTS/host.docker.internal:msvc-products:5e2fcb82329b192e2c29ea4b8bec40c6 - registration status: 204
+2025-04-17T22:26:41.019-06:00  INFO 28272 --- [msvc-products] [restartedMain] h.s.m.products.MsvcProductsApplication   : Started MsvcProductsApplication in 8.269 seconds (process running for 9.37)
+2025-04-17T22:27:10.894-06:00  INFO 28272 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-17T22:27:10.894-06:00  INFO 28272 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-17T22:27:10.895-06:00  INFO 28272 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-17T22:27:10.895-06:00  INFO 28272 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-17T22:27:10.896-06:00  INFO 28272 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-17T22:27:10.897-06:00  INFO 28272 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-04-17T22:27:10.898-06:00  INFO 28272 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-17T22:27:10.923-06:00  INFO 28272 --- [msvc-products] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-17T22:31:40.475-06:00  INFO 28272 --- [msvc-products] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-17T22:36:40.480-06:00  INFO 28272 --- [msvc-products] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-17T22:38:33.007-06:00  INFO 28272 --- [msvc-products] [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-17T22:38:33.007-06:00  INFO 28272 --- [msvc-products] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-17T22:38:33.007-06:00  INFO 28272 --- [msvc-products] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms

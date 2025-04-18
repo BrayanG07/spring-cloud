@@ -1,0 +1,38 @@
+server:
+    port: 8080
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
+    instance:
+        preferIpAddress: true
+spring:
+    application:
+        name: msvc-gateway-server
+    cloud:
+        gateway:
+            routes:
+            -   id: msvc-products
+                uri: lb://msvc-products # lb:// indica que se usará el balanceador de carga de Eureka
+                predicates:
+                    - Path=/api/products/** # Se define el patrón de la URL que se va a interceptar
+                    - Method=GET,POST,PUT
+                filters:
+                    - StripPrefix=2
+                    #- AuthenticationFilter # Hace referencia al archivo AuthenticationFilter.java
+            -   id: msvc-items
+                uri: lb://msvc-items # lb:// indica que se usará el balanceador de carga de Eureka
+                predicates:
+                    - Path=/api/items/** # Se define el patrón de la URL que se va a interceptar
+                    - Method=GET,POST,PUT
+                filters:
+                    - StripPrefix=2
+                    #- AuthenticationFilter # Hace referencia al archivo AuthenticationFilter.java
+            -   id: msvc-users
+                uri: lb://msvc-users # lb:// indica que se usará el balanceador de carga de Eureka
+                predicates:
+                    - Path=/api/users/** # Se define el patrón de la URL que se va a interceptar
+                    - Method=GET,POST,PUT
+                filters:
+                    - StripPrefix=2
+                    #- AuthenticationFilter # Hace referencia al archivo AuthenticationFilter.java

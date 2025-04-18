@@ -1,2 +1,6 @@
-# spring-cloud
-Arquitectura de microservicios, Spring Cloud Gateway, Eureka Server, Spring Cloud Config
+### Maven
+
+- Instalar dependencias manualmente:
+```bash
+./mvnw clean install
+```
